@@ -90,6 +90,8 @@ pub fn read_expression_matrix(
                     for sample in samples_vec.iter().skip(1) {
                         samples.push(sample.to_string());
                     }
+                    lines_num += 1;
+                    continue;
                 } else {
                     let samples_vec: Vec<String> =
                         line.split(",").map(|s| s.parse().unwrap()).collect();

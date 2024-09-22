@@ -71,6 +71,9 @@ pub fn core_threads_cacu_pearson(
         .build()?;
 
     for key in group_uniq_map.keys() {
+        if key.to_uppercase() == "CK" {
+            continue;
+        }
         if let Some(group_index) = group_uniq_map.get(key) {
             let file_name: String = key
                 .split(',')

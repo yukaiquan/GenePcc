@@ -10,7 +10,7 @@ pub fn get_arg() -> ArgMatches {
     App::new("cst_gene_net")
         .version("0.0.1")
         .author("Yu kaiquan <1962568272@qq.com>")
-        .about("Caculate PCCs from TPM/FPKM/CPM matrix")
+        .about("Caculate PCCs from TPM/FPKM/CPM matrix, default output dir is cst_gene_net_out and default skip CK(ck)")
         .arg(
             Arg::with_name("input")
                 .short('i')
